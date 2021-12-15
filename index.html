@@ -6,22 +6,27 @@
         <script type="importmap">
             {
                 "imports": {
+                    "lib": "/libs/lib.js",
                     "library": "/libs/library.js"
                 }
             }
         </script>
-        <script>
+        <script type="module">
+            // static import
+            import "lib";
+
+            // dynamic import
             import("library")
                 .then(() => {
-                    console.log("It worked.");
+                    console.log("Dynamically import() with import modules worked.");
                 })
                 .catch((e) => {
-                    console.log("It did not work.");
+                    console.log("Dynamically import() with import modules DID NOT work.");
                     console.error(e);
                 });
         </script>
     </head>
     <body>
-        <div>Open devtools console</div>
+        <div>Open devtools console.</div>
     </body>
 </html>
