@@ -1,0 +1,22 @@
+{
+  "name": "importmap-dynamic-import",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moisadoru/importmap-dynamic-import.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moisadoru/importmap-dynamic-import/issues"
+  },
+  "homepage": "https://github.com/moisadoru/importmap-dynamic-import#readme",
+  "devDependencies": {
+    "serve": "^13.0.2"
+  }
+}

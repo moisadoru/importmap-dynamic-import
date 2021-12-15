@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic import with import maps</title>
+        <link rel="icon" href="data:,">
+        <script type="importmap">
+            {
+                "imports": {
+                    "library": "/libs/library.js"
+                }
+            }
+        </script>
+        <script>
+            import("library")
+                .then(() => {
+                    console.log("It worked.");
+                })
+                .catch((e) => {
+                    console.log("It did not work.");
+                    console.error(e);
+                });
+        </script>
+    </head>
+    <body>
+        <div>Open devtools console</div>
+    </body>
+</html>
